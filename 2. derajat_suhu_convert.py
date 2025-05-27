@@ -69,7 +69,7 @@ while i == 0:
         if(tem_akhir == 'C'):
             hasil = awal - 273.15
             print(f'Hasil perubahan subu dari {awal} Kelvin = {hasil} Celsius')
-        elif(tem.akhir.upper() == 'F'):
+        elif(tem_akhir == 'F'):
             hasil = ((awal - 273.15)/5*9)+32
             print(f'Hasil perubahan subu dari {awal} Kelvin = {hasil} Fahrenheit')
         elif(tem_akhir == 'R'):

@@ -5,8 +5,8 @@ print('    Game Tebak Angka Sederhana      ')
 print('====================================')
 
 while True:
-    pilihan = input('Apakah kamu ingin memainkan permainan ini (Y/N)')
-    if(pilihan.upper() == 'Y'):
+    pilihan = input('Apakah kamu ingin memainkan permainan ini (Y/N)').upper()
+    if(pilihan == 'Y'):
         percobaan = 0
         angka = random.randint(1,10)
         print('Pilihlah angka 1-10, dan tebak angka dari komputer maksimal 3 kali tebakan')
@@ -53,9 +53,10 @@ while True:
                     print('===============================================')
             else:
                 print('Data tidak terdefinisi')
-    elif(pilihan.upper() == 'N'):
+    elif(pilihan == 'N'):
         print('Aplikasi ini telah dimatikan')
         print('============================================')
+        exit()
     else:
         print('Data yang dimasukan tidak terdefinisi')
         print('============================================')
